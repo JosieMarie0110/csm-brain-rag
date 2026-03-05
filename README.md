@@ -1,3 +1,5 @@
+Project Status: Actively under development
+
 # CSM Brain RAG
 
 AI assistant designed for Customer Success Managers (CSMs).  
