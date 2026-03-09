@@ -107,9 +107,10 @@ Strategic guidance on positioning value and aligning the platform with customer 
 
 ## Tech Stack
 
-- Python  
-- Gradio (UI framework)  
-- OpenAI API  
+- Python
+- Gradio (UI framework)
+- OpenAI API
+- JSON configuration (response templates)
 - PDF knowledge ingestion (RAG-style knowledge base)
 
 ---
