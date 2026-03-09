@@ -1,6 +1,4 @@
-import base64
 import json
-import mimetypes
 import os
 
 import gradio as gr
@@ -9,6 +7,7 @@ from dotenv import load_dotenv
 from ask_brain import generate_cs_brain_response
 
 load_dotenv()
+
 
 FORMATS_FILE = "formats.json"
 IMAGE_PATH = "banner1.png"
@@ -29,22 +28,9 @@ def load_format_choices():
     return list(data.keys())
 
 
-def image_to_data_uri(path: str) -> str | None:
-    if not os.path.exists(path):
-        return None
-
-    mime_type, _ = mimetypes.guess_type(path)
-    if not mime_type:
-        mime_type = "image/png"
-
-    with open(path, "rb") as f:
-        encoded = base64.b64encode(f.read()).decode("utf-8")
-
-    return f"data:{mime_type};base64,{encoded}"
-
-
+image_component_value = IMAGE_PATH if os.path.exists(IMAGE_PATH) else None
 format_choices = load_format_choices()
-image_data_uri = image_to_data_uri(IMAGE_PATH)
+
 
 custom_css = """
 body, .gradio-container {
@@ -71,21 +57,6 @@ body, .gradio-container {
     box-shadow: 0 2px 10px rgba(25, 60, 120, 0.04);
 }
 
-.brand-logo-wrap {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.brand-logo {
-    width: 88px;
-    height: 88px;
-    object-fit: cover;
-    border-radius: 14px;
-    border: 1px solid #d9e6f7;
-    display: block;
-}
-
 .brand-title {
     font-size: 28px;
     font-weight: 700;
@@ -99,6 +70,12 @@ body, .gradio-container {
     color: #54719a;
     margin-top: 6px;
     line-height: 1.4;
+}
+
+.brand-image img {
+    border-radius: 14px !important;
+    border: 1px solid #d9e6f7 !important;
+    object-fit: cover !important;
 }
 
 .panel-card {
@@ -191,23 +168,24 @@ footer {
 }
 """
 
+
 with gr.Blocks(title="CS Brain") as demo:
     with gr.Row(elem_classes=["topbar"]):
-        if image_data_uri:
-            with gr.Column(scale=1, min_width=110):
-                gr.HTML(
-                    f'''
-                    <div class="brand-logo-wrap">
-                        <img src="{image_data_uri}" alt="CS Brain logo" class="brand-logo">
-                    </div>
-                    '''
+        if image_component_value:
+            with gr.Column(scale=1, min_width=150, elem_classes=["brand-image"]):
+                gr.Image(
+                    value=image_component_value,
+                    show_label=False,
+                    interactive=False,
+                    container=False,
+                    height=95
                 )
 
         with gr.Column(scale=8, min_width=400):
             gr.HTML("""
                 <div class="brand-title">CS Brain</div>
                 <div class="brand-subtitle">
-                    AI assistant for Customer Success analysis and action planning.
+                    Customer Success strategy assistant for risk analysis, executive messaging, and account planning.
                 </div>
             """)
 
