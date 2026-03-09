@@ -1,160 +1,180 @@
-CS Brain
+# CS Brain
 
-AI-powered strategy assistant for Customer Success Managers
+**AI-powered strategy assistant for Customer Success Managers**
 
-CS Brain is a lightweight AI tool designed to help Customer Success Managers generate strategic responses, risk analysis, and executive-ready messaging based on Customer Success best practices.
+CS Brain is a lightweight AI tool designed to help Customer Success Managers generate **strategic responses, risk analysis, and executive-ready messaging** based on Customer Success best practices.
 
-The tool acts as a CSM knowledge assistant, helping translate complex customer situations into structured insights and actionable communication.
+The tool acts as a **CSM knowledge assistant**, helping translate complex customer situations into structured insights and actionable communication.
 
-This project was built as part of a Customer Success AI toolkit designed to support real-world CS workflows such as account strategy, incident communication, and customer risk evaluation.
+This project was built as part of a **Customer Success AI toolkit** designed to support real-world CS workflows such as account strategy, incident communication, and customer risk evaluation.
 
-Why This Project Exists
+---
+
+## Why This Project Exists
 
 Customer Success Managers often need to quickly:
 
-assess customer health signals
+- assess customer health signals  
+- craft executive-ready messaging  
+- respond to incidents  
+- align product usage with business outcomes  
+- prepare for QBR / EBR discussions  
 
-craft executive-ready messaging
+However, most tools focus on **product analytics**, not **strategic thinking and communication**.
 
-respond to incidents
+**CS Brain bridges that gap** by helping CSMs structure their thinking into **clear, strategic outputs**.
 
-align product usage with business outcomes
+---
 
-prepare for QBR / EBR discussions
+## Key Features
 
-However, most tools focus on product analytics, not strategic thinking and communication.
-
-CS Brain bridges that gap by helping CSMs structure their thinking into clear, strategic outputs.
-
-Key Features
-
-Structured Strategic Responses
+**Structured Strategic Responses**
 
 Transforms open-ended questions into clear, structured guidance aligned with Customer Success best practices.
 
-Multiple Response Formats
+**Multiple Response Formats**
 
 Users can choose how they want the output structured, including:
 
-Strategic guidance
+- Strategic guidance  
+- Executive summaries  
+- Customer messaging  
+- Playbooks and action plans  
 
-Executive summaries
-
-Customer messaging
-
-Playbooks and action plans
-
-Customer Success Knowledge Assistant
+**Customer Success Knowledge Assistant**
 
 The system uses a knowledge base of Customer Success concepts to help generate responses aligned with common CS frameworks.
 
-Fast Idea Generation
+**Fast Idea Generation**
 
 CSMs can quickly brainstorm messaging or strategy when preparing for:
 
-customer calls
+- customer calls  
+- renewal discussions  
+- internal strategy meetings  
+- executive updates  
 
-renewal discussions
+---
 
-internal strategy meetings
+## Example Use Cases
 
-executive updates
+### Account Risk Evaluation
 
-Example Use Cases
-Account Risk Evaluation
+**Input**
 
-Input
 Customer adoption has declined and engagement with the platform has dropped over the past quarter.
 
-Output
+**Output**
+
 Structured analysis outlining potential risk signals, recommended actions, and communication strategies.
 
-Executive Communication
+---
 
-Input
+### Executive Communication
+
+**Input**
+
 Need to explain an incident impact to a customer executive.
 
-Output
+**Output**
+
 Clear executive-ready messaging summarizing the situation, impact, and next steps.
 
-Strategic Customer Planning
+---
 
-Input
+### Strategic Customer Planning
+
+**Input**
+
 Customer is expanding infrastructure and evaluating additional solutions.
 
-Output
+**Output**
+
 Strategic guidance on positioning value and aligning the platform with customer objectives.
 
-Tech Stack
+---
 
-Python
+## Tech Stack
 
-Gradio (UI framework)
+- Python  
+- Gradio (UI framework)  
+- OpenAI API  
+- PDF knowledge ingestion (RAG-style knowledge base)
 
-OpenAI API
+---
 
-PDF knowledge ingestion (RAG-style knowledge base)
+## How It Works
 
-How It Works
+1. The user enters a question or customer scenario.
+2. CS Brain retrieves relevant context from the knowledge base.
+3. The AI generates a **structured response based on the selected output format.**
+4. The result helps the CSM quickly produce **clear, professional communication or strategy guidance.**
 
-The user enters a question or customer scenario.
+---
 
-CS Brain retrieves relevant context from the knowledge base.
-
-The AI generates a structured response based on the selected output format.
-
-The result helps the CSM quickly produce clear, professional communication or strategy guidance.
-
-Running the Project Locally
+## Running the Project Locally
 
 Clone the repository
 
+```
 git clone https://github.com/YOUR_USERNAME/csm-brain-clean.git
 cd csm-brain-clean
+```
 
 Create a virtual environment
 
+```
 python3 -m venv venv
 source venv/bin/activate
+```
 
 Install dependencies
 
+```
 pip install -r requirements.txt
+```
 
 Set your OpenAI API key
 
+```
 export OPENAI_API_KEY="your_api_key_here"
+```
 
 Run the app
 
+```
 python app_gradio.py
-Future Improvements
+```
 
-improved response structuring
+---
 
-additional Customer Success frameworks
+## Future Improvements
 
-enhanced knowledge base ingestion
+- improved response structuring  
+- additional Customer Success frameworks  
+- enhanced knowledge base ingestion  
+- playbook expansion  
+- integration with other CS AI tools  
 
-playbook expansion
+---
 
-integration with other CS AI tools
-
-Part of a Larger Customer Success AI Toolkit
+## Part of a Larger Customer Success AI Toolkit
 
 This project is part of a broader set of experimental tools exploring how AI can assist Customer Success teams.
 
 Related projects include:
 
-Customer Signal Analyzer
+**Customer Signal Analyzer**  
 Analyzes customer communication to detect risk, resistance, or alignment signals.
 
-Incident to Executive Translator
+**Incident to Executive Translator**  
 Converts technical incident descriptions into executive-ready communication.
 
-Business Outcome Translator (planned)
+**Business Outcome Translator (planned)**  
 Maps product adoption signals to measurable business outcomes.
 
-Author
+---
 
-Built by a Customer Success professional with 15+ years of experience in SaaS, cybersecurity, and technical account management, exploring how AI can support modern Customer Success workflows.
+## Author
+
+Built by a Customer Success professional with **15+ years of experience in SaaS, cybersecurity, and technical account management**, exploring how AI can support modern Customer Success workflows.
