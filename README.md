@@ -57,7 +57,6 @@ CSMs can quickly brainstorm messaging or strategy when preparing for:
 ---
 
 
-<img width="986" height="1064" alt="image" src="https://github.com/user-attachments/assets/35f956d5-6aa1-4548-bea0-b1e97c99493c" />
 
 <img width="1502" height="1125" alt="image" src="https://github.com/user-attachments/assets/de9a2d9e-a9d6-4c12-b19c-925e01f462d4" />
 
