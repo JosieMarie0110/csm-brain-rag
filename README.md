@@ -56,18 +56,14 @@ CSMs can quickly brainstorm messaging or strategy when preparing for:
 
 ---
 
+<img width="994" height="1048" alt="image" src="https://github.com/user-attachments/assets/1337e07a-52a8-45da-b01d-3a9a02b3d780" />
 
+<img width="1497" height="1119" alt="image" src="https://github.com/user-attachments/assets/b1792dfa-1c73-4932-b387-b5f5419eec8c" />
 
-<img width="1502" height="1125" alt="image" src="https://github.com/user-attachments/assets/de9a2d9e-a9d6-4c12-b19c-925e01f462d4" />
+<img width="1499" height="1279" alt="image" src="https://github.com/user-attachments/assets/c7683a5c-2f90-4577-953c-84fbb2e477e8" />
 
+<img width="984" height="1067" alt="image" src="https://github.com/user-attachments/assets/df4aa155-247c-412e-b656-56e2ac88b215" />
 
-<img width="1498" height="1129" alt="image" src="https://github.com/user-attachments/assets/4939f34f-c0a0-471e-9d7a-3e535cc940ac" />
-
-<img width="1488" height="1278" alt="image" src="https://github.com/user-attachments/assets/7c47c43e-ad75-4a2a-8e60-b6f954bb4dd5" />
-
-
-
-<img width="1001" height="1080" alt="image" src="https://github.com/user-attachments/assets/f1161a17-80bf-4591-b8e9-8da5593cd2fb" />
 
 
 
